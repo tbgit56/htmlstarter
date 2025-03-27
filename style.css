@@ -1,0 +1,67 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: small;
+    align-items: center;
+}
+
+h1 {
+    font-size: xx-large;
+}
+
+input {
+    border: none;
+    outline: none;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+}
+
+label {
+    display: block;
+    padding: 1rem;
+}
+
+.form {
+    width: 70%;
+    margin: auto;
+    padding: 2%;
+    border: 2px solid black;
+}
+
+.column {
+    display: flex;
+    justify-content: space-between;
+    gap: 2px;
+}
+
+.block {
+    border: 1px solid black;
+    flex: 1; 
+    padding: 1px;
+}
+
+.block-password {
+    flex: 0.5; 
+    padding: 1px;
+}
+
+button {
+    height: 2rem;
+    border-radius: 1px;
+    background-color: darkgray;
+}
+
+.half-block {
+    flex: 0.5;
+    border: 1px solid black;
+    padding: 1px;
+}
+
+.date {
+    border: 1px solid black;
+    flex: 1; 
+    width: 75%;
+    padding: 1px;
+}
