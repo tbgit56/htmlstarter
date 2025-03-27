@@ -1,38 +1,80 @@
 <!DOCTYPE html>
-<html>  
-    <head>
-        <title>create</title>
-    </head>
-        <body>
-        <h1> Create a new account</h1>
-        <h3> It's quick and easy</h3>
-            <lable style="border: 2px solid black;"> First Name : <input style="border: none;" type="text" name= "fname"> </lable>
-            <lable style="border: 2px solid black;margin-left: 4px;"> Surname: <input style="border: none;" type="text"name="sname"></lable>
-                        <br><br>
-            <lable style="border: 2px solid black;">Mobile Number or email address:<input style="border: none;" type="email"></lable>
-                        <br><br>
-            <lable style="border: 2px solid black;">New Password:<input style="border: none;" type="password"></lable>
-                        <br><br>
-            <label>Birthday:<input type="date"></label>
-                        <br><br>
-            <label>Gender:
-                         <input type="radio">Male
-                         <input type="radio">Female
-                         <input type="radio">Custom
-                    </label>
-                        <br><br>
-                            <p>
-                                By Clicking sign up , you agree to our Terms,Data Policy and Cookie Policy.
-                                You may receive Sms notification form us and can opt out at any time.
-                                 
-                            </p>
-                                <button type="submit" style="width:50%;">sign up</button>
-                            <p>
-                                Create a page for celebrity,band or bussiness.
-                            </p>
-            </form>
-      
-        
-       
-        </body>
+<html lang="en"> <!-- lang kiyanne english language eken gahapu website ekak kiyana eka-->
+
+<head>
+    <meta charset="UTF-8"> <!-- UTF-8 kiyanne character encoding ekak website ekak design kraddi render krnna meka oni wenawa -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- meke width eka api pawichchi krana desktop eka or mobile eka or desktop eka podi kraddi eke ganata hadenna kiyana eka thama meken kranne -->
+    <title>Create Account</title> <!-- Me Title eka api open krana tap eke uda display wena eka, ara loka golayak ekka thiyenne eka -->
+    <link rel="stylesheet" href="style.css"> <!-- Meken kranne apita oni krana style tike html file ekata import krna eka api java wala library import krnawa wage -->
+</head>
+
+<body>
+    <div class="form"> <!-- me div kiyana eka use kranne eka eka kotas containerise kranna ethakota piliwalai wada kranakota -->
+        <div class="section">
+            <h1> Create a new account</h1>
+            <h3> It's quick and easy.</h3>
+        </div>
+
+        <div class="section">
+            <div class="column_1">
+                <label class="block"> First Name : 
+                    <input type="text" name= "first_name">
+                </label>
+                
+                <label class="block"> SurName : 
+                    <input type="text" name= "sur_name"> 
+                </label>
+            </div>
+
+            <br> <!-- break line -->
+
+            <div class="column_1">
+                <label class="block"> Mobile number or email address : 
+                    <input type="text" name= "sur_name">
+                </label>
+            </div>
+
+            <br>
+
+            <div class="column_1">
+                <label class="half-block">New Password :
+                    <input name="password" type="password">
+                </label>
+            </div>
+
+            <br>
+
+            <div class="column_1">
+                <label class="block-password">Birthday : 
+                    <br>
+                    <input class="date" name="datepicker" type="date">
+                </label>
+            </div>
+
+            <br>
+
+            <div class="column_1">
+                <label class="block-password">Gender : 
+                    <br>
+                    <input type="radio"  value="male">Male
+                    <input type="radio"  value="female">Female
+                    <input type="radio"  value="custom">Custom
+                </label>
+            </div>
+
+           <br>
+
+           <p> 
+                By Clicking sign up , you agree to our Terms,Data Policy and Cookie Policy. You may receive Sms notification form us and can opt out at any time.
+            </p>
+           
+            <div class="column_1">
+                <button class="half-block" type="submit">Sign UP</button>
+            </div>
+
+           <p>Create a Page for celebrity, band or bussiness.</p>
+        </div>
+    </div>
+</body>
+
 </html>
